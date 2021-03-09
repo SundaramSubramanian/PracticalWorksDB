@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>PracticalWorksDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{2c19da1f-5c7b-488a-8684-15ec69d62b5a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>PracticalWorksDB</RootNamespace>
+    <AssemblyName>PracticalWorksDB</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include=".vs" />
+    <Folder Include=".vs\PracticalWorksDB" />
+    <Folder Include=".vs\PracticalWorksDB\v16" />
+    <Folder Include="bin" />
+    <Folder Include="bin\Debug" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="Details" />
+    <Folder Include="Details\Stored Procedures" />
+    <Folder Include="Details\Tables" />
+    <Folder Include="Import Schema Logs" />
+    <Folder Include="obj" />
+    <Folder Include="obj\Debug" />
+    <Folder Include="Security" />
+    <Folder Include="TestSchemaName" />
+    <Folder Include="TestSchemaName\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="bin\Debug\PracticalWorksDB.publish.sql" />
+    <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\StoreNonEnglish.sql" />
+    <Build Include="TestSchemaName\Tables\TestTable.sql" />
+    <Build Include="Details\Tables\Marks.sql" />
+    <Build Include="Details\Tables\StudentPersonalDetails.sql" />
+    <Build Include="Details\Tables\StudentDetails.sql" />
+    <Build Include="Details\Stored Procedures\pGetStudentList.sql" />
+    <Build Include="Security\TestSchemaName.sql" />
+    <Build Include="Security\Details.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\PracticalWorksDB\v16\.suo" />
+    <None Include="bin\Debug\DeploymentReport.txt" />
+    <None Include="bin\Debug\PracticalWorksDB.dacpac" />
+    <None Include="bin\Debug\PracticalWorksDB.dll" />
+    <None Include="bin\Debug\PracticalWorksDB.pdb" />
+    <None Include="Import Schema Logs\PracticalWorksDB_20210307101158.log" />
+    <None Include="obj\Debug\Model.xml" />
+    <None Include="obj\Debug\PracticalWorksDB.dll" />
+    <None Include="obj\Debug\PracticalWorksDB.pdb" />
+    <None Include="obj\Debug\PracticalWorksDB.sqlproj.FileListAbsolute.txt" />
+    <None Include="obj\Debug\PracticalWorksDB.sqlprojAssemblyReference.cache" />
+    <None Include="CompareTool.scmp" />
+  </ItemGroup>
+</Project>

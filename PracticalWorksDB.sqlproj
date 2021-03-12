@@ -79,12 +79,12 @@
     <Build Include="Security\Permissions.sql" />
     <Build Include="dbo\Tables\StoreNonEnglish.sql" />
     <Build Include="TestSchemaName\Tables\TestTable.sql" />
-    <Build Include="Details\Tables\Marks.sql" />
     <Build Include="Details\Tables\StudentPersonalDetails.sql" />
     <Build Include="Details\Tables\StudentDetails.sql" />
     <Build Include="Details\Stored Procedures\pGetStudentList.sql" />
     <Build Include="Security\TestSchemaName.sql" />
     <Build Include="Security\Details.sql" />
+    <Build Include="Details\Tables\Exam.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".vs\PracticalWorksDB\v16\.suo" />
@@ -98,5 +98,6 @@
     <None Include="obj\Debug\PracticalWorksDB.pdb" />
     <None Include="obj\Debug\PracticalWorksDB.sqlproj.FileListAbsolute.txt" />
     <None Include="obj\Debug\PracticalWorksDB.sqlprojAssemblyReference.cache" />
+    <None Include="CompareTool.scmp" />
   </ItemGroup>
 </Project>

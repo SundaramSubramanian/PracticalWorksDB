@@ -1,7 +1,8 @@
 ﻿CREATE PROCEDURE [Details].[pGetStudentList]
 AS 
 BEGIN 
-	SELECT [StudentId]
+	SELECT TOP (10)
+		[StudentId]
       ,[FirstName]
       ,[LastName]
       ,[RegistrationNumber]

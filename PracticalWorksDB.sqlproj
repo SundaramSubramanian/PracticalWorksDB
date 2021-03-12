@@ -98,6 +98,5 @@
     <None Include="obj\Debug\PracticalWorksDB.pdb" />
     <None Include="obj\Debug\PracticalWorksDB.sqlproj.FileListAbsolute.txt" />
     <None Include="obj\Debug\PracticalWorksDB.sqlprojAssemblyReference.cache" />
-    <None Include="CompareTool.scmp" />
   </ItemGroup>
 </Project>
